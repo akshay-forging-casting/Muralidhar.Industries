@@ -3,152 +3,151 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#101113">
-  <meta name="description" content="Muralidhar Industries, Rajkot, Gujarat — forging, ferrous and non-ferrous castings, and precision-machined industrial components made to your requirements.">
+  <meta name="theme-color" content="#1C1E22">
+  <meta name="description" content="Muralidhar Industries, Rajkot, Gujarat — forging, ferrous and non-ferrous casting, and precision machining for industrial components.">
   <title>Muralidhar Industries | Forging, Casting &amp; Precision Machining</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
     :root {
       color-scheme: dark;
-      --ink: #101113;
-      --panel: #17191c;
-      --panel-soft: #1d2024;
-      --gold: #efbd42;
-      --gold-light: #ffd875;
-      --white: #f7f6f2;
-      --muted: #b7b8b8;
+      --charcoal: #1C1E22;
+      --charcoal-deep: #15171A;
+      --panel: #24272C;
+      --gold: #D4AF37;
+      --white: #FFFFFF;
+      --muted: #B7BABF;
       --line: rgba(255,255,255,.13);
       --content: 1160px;
     }
     *, *::before, *::after { box-sizing: border-box; }
-    html { scroll-behavior: smooth; scroll-padding-top: 88px; }
-    body { margin: 0; background: var(--ink); color: var(--white); font-family: 'DM Sans', Arial, sans-serif; line-height: 1.65; }
+    html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+    body { margin: 0; background: var(--charcoal); color: var(--white); font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.65; }
     a { color: inherit; }
-    img { display: block; max-width: 100%; }
+    button { font: inherit; }
     .wrap { width: min(var(--content), calc(100% - 48px)); margin-inline: auto; }
-    .eyebrow { color: var(--gold); font-size: .75rem; font-weight: 700; letter-spacing: .19em; text-transform: uppercase; }
+    .eyebrow { color: var(--gold); font-size: .75rem; font-weight: 750; letter-spacing: .18em; text-transform: uppercase; }
     .gold-rule { width: 52px; height: 3px; margin: 18px 0 22px; background: var(--gold); }
-    .site-header { position: sticky; top: 0; z-index: 20; border-bottom: 1px solid rgba(239,189,66,.48); background: rgba(16,17,19,.94); backdrop-filter: blur(14px); }
+    .site-header { position: sticky; top: 0; z-index: 10; border-bottom: 1px solid rgba(212,175,55,.42); background: rgba(28,30,34,.96); backdrop-filter: blur(12px); }
     .nav { min-height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
     .brand { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; }
-    .brand-mark { width: 43px; height: 43px; flex: 0 0 auto; }
-    .brand-name { font-family: Manrope, sans-serif; font-size: 1.05rem; font-weight: 800; letter-spacing: .015em; }
-    .brand-name span { display: block; margin-top: -5px; color: var(--gold); font-size: .66rem; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; }
+    .brand-mark { width: 45px; height: 45px; display: grid; place-items: center; border: 1px solid var(--gold); color: var(--gold); font-weight: 850; letter-spacing: -.08em; font-size: 1.1rem; }
+    .brand-name { font-weight: 800; letter-spacing: .01em; line-height: 1.15; }
+    .brand-name small { display: block; margin-top: 4px; color: var(--gold); font-size: .65rem; font-weight: 700; letter-spacing: .19em; text-transform: uppercase; }
     .nav-links { display: flex; align-items: center; gap: 27px; }
-    .nav-links a { color: #e0dfdc; font-size: .88rem; font-weight: 600; text-decoration: none; transition: color .2s ease; }
+    .nav-links a { color: #E8E8E6; font-size: .9rem; font-weight: 650; text-decoration: none; transition: color .2s ease; }
     .nav-links a:hover, .nav-links a:focus-visible { color: var(--gold); }
-    .nav-links .nav-cta { padding: 10px 16px; border: 1px solid var(--gold); color: var(--gold); }
-    .menu-toggle { display: none; border: 1px solid var(--line); background: transparent; color: var(--white); padding: 9px 12px; font: inherit; }
-    .hero { position: relative; min-height: 610px; display: flex; align-items: center; overflow: hidden; background: #101113; }
-    .hero::before { position: absolute; inset: 0; content: ''; background: linear-gradient(90deg, rgba(13,14,16,.97) 0%, rgba(13,14,16,.88) 45%, rgba(13,14,16,.35) 100%), linear-gradient(0deg, rgba(13,14,16,.8), transparent 50%), url('https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=2000&q=85') center 53% / cover; }
-    .hero::after { position: absolute; right: -120px; bottom: -180px; width: 480px; height: 480px; content: ''; border: 1px solid rgba(239,189,66,.27); transform: rotate(45deg); }
-    .hero-content { position: relative; z-index: 1; width: min(760px, 100%); padding: 100px 0 112px; }
-    .hero h1 { max-width: 760px; margin: 20px 0 20px; font-family: Manrope, sans-serif; font-size: clamp(2.65rem, 6vw, 5.2rem); font-weight: 800; letter-spacing: -.055em; line-height: 1.06; }
+    .nav-links .nav-cta { padding: 9px 15px; border: 1px solid var(--gold); color: var(--gold); }
+    .menu-toggle { display: none; padding: 9px 12px; border: 1px solid var(--line); background: transparent; color: var(--white); cursor: pointer; }
+    .hero { position: relative; min-height: 630px; display: flex; align-items: center; overflow: hidden; background: radial-gradient(ellipse at 82% 50%, rgba(212,175,55,.13), transparent 35%), var(--charcoal-deep); }
+    .hero::before { position: absolute; inset: 0; content: ""; opacity: .14; background-image: linear-gradient(rgba(255,255,255,.08) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.08) 1px, transparent 1px); background-size: 48px 48px; mask-image: linear-gradient(90deg, transparent, black); }
+    .hero::after { position: absolute; right: -150px; bottom: -240px; width: 550px; height: 550px; content: ""; border: 1px solid rgba(212,175,55,.32); transform: rotate(45deg); }
+    .hero-grid { position: relative; z-index: 1; display: grid; grid-template-columns: 1.1fr .9fr; align-items: center; gap: 56px; padding-block: 84px; }
+    .hero h1 { margin: 18px 0; font-size: clamp(2.5rem, 5vw, 4.65rem); font-weight: 850; letter-spacing: -.055em; line-height: 1.08; }
     .hero h1 span { color: var(--gold); }
-    .hero-copy { max-width: 640px; color: #d3d2cf; font-size: 1.08rem; }
-    .actions { display: flex; flex-wrap: wrap; gap: 13px; margin-top: 30px; }
-    .button { display: inline-flex; min-height: 48px; align-items: center; justify-content: center; gap: 9px; padding: 11px 20px; border: 1px solid var(--gold); background: var(--gold); color: #171613; font-weight: 700; text-decoration: none; transition: transform .2s ease, background .2s ease; }
-    .button:hover { transform: translateY(-2px); background: var(--gold-light); }
-    .button-outline { background: transparent; color: var(--white); border-color: rgba(255,255,255,.55); }
+    .hero-copy { max-width: 650px; color: #D5D6D8; font-size: 1.05rem; }
+    .hero-location { margin-top: 20px; color: var(--muted); font-size: .92rem; }
+    .hero-location span { color: var(--gold); }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 27px; }
+    .button { display: inline-flex; min-height: 48px; align-items: center; justify-content: center; gap: 9px; padding: 11px 19px; border: 1px solid var(--gold); background: var(--gold); color: #1C1E22; font-weight: 750; text-decoration: none; transition: transform .2s, background .2s; }
+    .button:hover { transform: translateY(-2px); background: #E3C65F; }
+    .button-outline { border-color: rgba(255,255,255,.45); background: transparent; color: var(--white); }
     .button-outline:hover { background: rgba(255,255,255,.08); }
-    .hero-note { display: flex; align-items: center; gap: 10px; margin-top: 44px; color: #dedbd4; font-size: .88rem; }
-    .hero-note::before { width: 30px; height: 1px; content: ''; background: var(--gold); }
-    .intro-strip { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: #151619; }
+    .scope-card { position: relative; padding: 30px; border: 1px solid rgba(212,175,55,.55); background: linear-gradient(145deg, rgba(40,43,48,.96), rgba(28,30,34,.94)); box-shadow: 0 24px 70px rgba(0,0,0,.24); }
+    .scope-card::before { position: absolute; top: -1px; left: 30px; width: 64px; height: 3px; content: ""; background: var(--gold); }
+    .scope-card h2 { margin: 8px 0 18px; font-size: 1.4rem; letter-spacing: -.02em; }
+    .scope-list { margin: 0; padding: 0; list-style: none; }
+    .scope-list li { display: flex; gap: 12px; padding: 11px 0; border-top: 1px solid var(--line); color: #E5E5E3; font-size: .91rem; }
+    .scope-list li::before { color: var(--gold); content: "✦"; }
+    .intro-strip { border-block: 1px solid var(--line); background: #202226; }
     .intro-grid { display: grid; grid-template-columns: repeat(3, 1fr); }
-    .intro-item { padding: 27px 24px; border-right: 1px solid var(--line); }
+    .intro-item { padding: 23px 24px; border-right: 1px solid var(--line); }
     .intro-item:first-child { padding-left: 0; }
     .intro-item:last-child { border: 0; }
-    .intro-item strong { display: block; color: var(--gold); font-family: Manrope, sans-serif; font-size: 1.02rem; }
+    .intro-item strong { display: block; color: var(--gold); font-size: 1rem; }
     .intro-item span { color: var(--muted); font-size: .86rem; }
-    .section { padding: 96px 0; }
-    .section-heading { max-width: 730px; margin-bottom: 42px; }
-    .section-heading h2 { margin: 8px 0 12px; font-family: Manrope, sans-serif; font-size: clamp(2rem, 4vw, 3.15rem); letter-spacing: -.045em; line-height: 1.15; }
-    .section-heading p { margin: 0; color: var(--muted); }
-    .about-grid { display: grid; grid-template-columns: .9fr 1.1fr; align-items: center; gap: 70px; }
-    .about-photo { min-height: 435px; position: relative; background: url('https://images.unsplash.com/photo-1567789884554-0b844b597180?auto=format&fit=crop&w=1100&q=85') center / cover; }
-    .about-photo::after { position: absolute; inset: 14px -14px -14px 14px; z-index: -1; border: 1px solid var(--gold); content: ''; }
-    .about-copy h2 { margin: 10px 0 17px; font-family: Manrope, sans-serif; font-size: clamp(2rem, 4vw, 3rem); letter-spacing: -.045em; line-height: 1.16; }
-    .about-copy p { color: var(--muted); }
-    .about-points { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 22px; margin-top: 27px; }
-    .about-points span { color: #e7e5df; font-size: .9rem; }
-    .about-points span::before { margin-right: 9px; color: var(--gold); content: '✦'; }
-    .capabilities { background: #151619; border-block: 1px solid var(--line); }
+    .section { padding: 88px 0; }
+    .section-heading { max-width: 730px; margin-bottom: 38px; }
+    .section-heading h2, .about-copy h2 { margin: 8px 0 12px; font-size: clamp(2rem, 4vw, 3.1rem); letter-spacing: -.045em; line-height: 1.15; }
+    .section-heading p, .about-copy p { margin: 0; color: var(--muted); }
+    .about-grid { display: grid; grid-template-columns: .9fr 1.1fr; align-items: center; gap: 64px; }
+    .about-visual { position: relative; min-height: 390px; display: grid; place-items: center; overflow: hidden; border: 1px solid var(--line); background: radial-gradient(circle at center, #3B3D40, #24272C 55%, #1B1D20); }
+    .about-visual::before, .about-visual::after { position: absolute; content: ""; border: 1px solid rgba(212,175,55,.32); transform: rotate(45deg); }
+    .about-visual::before { width: 260px; height: 260px; }
+    .about-visual::after { width: 330px; height: 330px; }
+    .gear { position: relative; z-index: 1; width: 170px; height: 170px; display: grid; place-items: center; border: 2px solid var(--gold); border-radius: 50%; color: var(--gold); font-size: 2rem; font-weight: 850; box-shadow: 0 0 0 16px rgba(212,175,55,.08), inset 0 0 0 12px rgba(212,175,55,.08); }
+    .about-copy p + p { margin-top: 14px; }
+    .about-points { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 18px; margin-top: 25px; }
+    .about-points span { color: #E8E8E6; font-size: .9rem; }
+    .about-points span::before { margin-right: 9px; color: var(--gold); content: "✓"; font-weight: 800; }
+    .capabilities { border-block: 1px solid var(--line); background: #202226; }
     .cap-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
-    .cap-card { min-height: 300px; padding: 29px; border: 1px solid var(--line); border-top: 3px solid var(--gold); background: linear-gradient(150deg, #202226, #17181b 76%); }
-    .cap-number { color: var(--gold); font-family: Manrope, sans-serif; font-size: .77rem; font-weight: 800; letter-spacing: .15em; }
-    .cap-card h3 { margin: 16px 0 10px; font-family: Manrope, sans-serif; font-size: 1.35rem; }
+    .cap-card { min-height: 300px; padding: 27px; border: 1px solid var(--line); border-top: 3px solid var(--gold); background: linear-gradient(150deg, #292C31, #202226 76%); }
+    .cap-number { color: var(--gold); font-size: .76rem; font-weight: 800; letter-spacing: .15em; }
+    .cap-card h3 { margin: 15px 0 10px; font-size: 1.28rem; line-height: 1.3; }
     .cap-card p { margin: 0 0 16px; color: var(--muted); font-size: .91rem; }
     .cap-card ul { margin: 0; padding: 0; list-style: none; }
-    .cap-card li { padding: 7px 0; border-top: 1px solid rgba(255,255,255,.08); color: #e0ded9; font-size: .87rem; }
-    .cap-card li::before { margin-right: 9px; color: var(--gold); content: '—'; }
-    .range-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
-    .range-card { padding: 30px; border: 1px solid var(--line); background: var(--panel); }
-    .range-card h3 { margin: 0 0 17px; font-family: Manrope, sans-serif; font-size: 1.2rem; }
-    .tag-list { display: flex; flex-wrap: wrap; gap: 9px; }
-    .tag { padding: 7px 11px; border: 1px solid rgba(239,189,66,.38); color: #e9e5db; font-size: .83rem; }
-    .industries { padding-top: 0; }
-    .industry-row { display: grid; grid-template-columns: repeat(4, 1fr); border: 1px solid var(--line); }
-    .industry { min-height: 115px; display: flex; flex-direction: column; justify-content: center; padding: 20px; border-right: 1px solid var(--line); }
-    .industry:last-child { border: 0; }
-    .industry strong { font-family: Manrope, sans-serif; font-size: 1rem; }
-    .industry span { color: var(--muted); font-size: .82rem; }
-    .contact-section { padding-top: 55px; }
-    .contact-panel { display: grid; grid-template-columns: 1.05fr .95fr; border: 1px solid rgba(239,189,66,.48); background: linear-gradient(125deg, #202226, #151619 70%); }
-    .contact-main, .contact-details { padding: 42px; }
+    .cap-card li { padding: 7px 0; border-top: 1px solid rgba(255,255,255,.08); color: #E5E5E3; font-size: .87rem; }
+    .cap-card li::before { margin-right: 9px; color: var(--gold); content: "—"; }
+    .table-wrap { overflow-x: auto; border: 1px solid var(--line); }
+    table { width: 100%; border-collapse: collapse; text-align: left; }
+    th, td { padding: 16px 19px; border-bottom: 1px solid var(--line); vertical-align: top; }
+    th { background: #292C31; color: var(--gold); font-size: .78rem; letter-spacing: .1em; text-transform: uppercase; }
+    td { color: #E1E2E3; font-size: .92rem; }
+    tbody tr:last-child td { border-bottom: 0; }
+    td:first-child { width: 24%; color: var(--white); font-weight: 700; }
+    .contact-section { padding-top: 20px; }
+    .contact-panel { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid rgba(212,175,55,.5); background: linear-gradient(125deg, #292C31, #202226 70%); }
+    .contact-main, .contact-details { padding: 39px; }
     .contact-main { border-right: 1px solid var(--line); }
-    .contact-main h2 { margin: 9px 0 13px; font-family: Manrope, sans-serif; font-size: clamp(2rem, 4vw, 2.8rem); letter-spacing: -.04em; line-height: 1.15; }
-    .contact-main p { max-width: 470px; color: var(--muted); }
-    .contact-details h3 { margin: 0 0 20px; color: var(--gold); font-family: Manrope, sans-serif; }
-    .contact-line { margin: 0 0 17px; color: var(--muted); font-size: .92rem; }
+    .contact-main h2 { margin: 9px 0 13px; font-size: clamp(2rem, 4vw, 2.8rem); letter-spacing: -.04em; line-height: 1.15; }
+    .contact-main p { max-width: 460px; color: var(--muted); }
+    .contact-details h3 { margin: 0 0 20px; color: var(--gold); font-size: 1.15rem; }
+    .contact-line { margin: 0 0 17px; color: var(--muted); font-size: .92rem; overflow-wrap: anywhere; }
     .contact-line strong { display: block; margin-bottom: 3px; color: var(--white); }
-    .contact-line a { text-decoration-color: rgba(239,189,66,.55); text-underline-offset: 3px; }
+    .contact-line a { text-decoration-color: rgba(212,175,55,.6); text-underline-offset: 3px; }
     .contact-line a:hover { color: var(--gold); }
-    .people { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 24px; }
-    .person { padding: 14px; border: 1px solid var(--line); }
-    .person strong { display: block; font-size: .93rem; }
-    .person a { color: var(--gold); font-size: .9rem; text-decoration: none; }
-    .footer { margin-top: 90px; padding: 26px 0; border-top: 1px solid var(--line); color: #929392; font-size: .82rem; }
+    .people { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 22px; }
+    .person { padding: 13px; border: 1px solid var(--line); }
+    .person strong { display: block; font-size: .91rem; }
+    .person a { color: var(--gold); font-size: .88rem; text-decoration: none; }
+    .footer { margin-top: 74px; padding: 23px 0; border-top: 1px solid var(--line); color: #A5A7AA; font-size: .82rem; }
     .footer-inner { display: flex; justify-content: space-between; gap: 20px; }
     .footer a { color: var(--gold); text-decoration: none; }
-    @media (max-width: 820px) {
-      .nav { min-height: 68px; }
+    @media (max-width: 850px) {
       .menu-toggle { display: inline-block; }
-      .nav-links { position: absolute; top: 68px; right: 0; left: 0; display: none; flex-direction: column; align-items: stretch; gap: 0; padding: 10px 24px 18px; border-bottom: 1px solid var(--line); background: #111214; }
+      .nav-links { position: absolute; top: 75px; right: 0; left: 0; display: none; flex-direction: column; align-items: stretch; gap: 0; padding: 10px 24px 18px; border-bottom: 1px solid var(--line); background: var(--charcoal); }
       .nav-links.open { display: flex; }
       .nav-links a { padding: 11px 0; }
       .nav-links .nav-cta { margin-top: 7px; padding: 10px 13px; text-align: center; }
-      .hero { min-height: 570px; }
-      .hero::before { background-position: 58% center; }
-      .about-grid { grid-template-columns: 1fr; gap: 42px; }
-      .about-photo { min-height: 360px; margin-right: 14px; }
+      .hero-grid { grid-template-columns: 1fr 1fr; gap: 30px; }
+      .scope-card { padding: 23px; }
+      .about-grid { gap: 38px; }
       .cap-grid { grid-template-columns: 1fr 1fr; }
-      .industry-row { grid-template-columns: 1fr 1fr; }
-      .industry:nth-child(2) { border-right: 0; }
-      .industry:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
     }
-    @media (max-width: 600px) {
+    @media (max-width: 620px) {
+      html { scroll-padding-top: 74px; }
       .wrap { width: min(100% - 36px, var(--content)); }
-      .brand-name { font-size: .95rem; }
-      .hero { min-height: 570px; }
-      .hero-content { padding: 78px 0 83px; }
-      .hero h1 { font-size: clamp(2.55rem, 12vw, 3.6rem); }
+      .nav { min-height: 68px; }
+      .nav-links { top: 67px; }
+      .brand-mark { width: 40px; height: 40px; }
+      .hero-grid { grid-template-columns: 1fr; padding-block: 65px; }
+      .hero h1 { font-size: clamp(2.4rem, 11vw, 3.5rem); }
       .hero-copy { font-size: 1rem; }
+      .scope-card { margin-top: 4px; }
       .intro-grid { grid-template-columns: 1fr; }
-      .intro-item, .intro-item:first-child { padding: 17px 0; border-right: 0; border-bottom: 1px solid var(--line); }
+      .intro-item, .intro-item:first-child { padding: 15px 0; border-right: 0; border-bottom: 1px solid var(--line); }
       .intro-item:last-child { border-bottom: 0; }
-      .section { padding: 70px 0; }
-      .cap-grid, .range-grid { grid-template-columns: 1fr; }
-      .cap-card { min-height: auto; }
+      .section { padding: 66px 0; }
+      .about-grid, .contact-panel { grid-template-columns: 1fr; }
+      .about-visual { min-height: 290px; }
+      .cap-grid { grid-template-columns: 1fr; }
+      .cap-card { min-height: 0; }
       .about-points { grid-template-columns: 1fr; }
-      .industry { min-height: 100px; padding: 15px; }
-      .contact-section { padding-top: 15px; }
-      .contact-panel { grid-template-columns: 1fr; }
-      .contact-main, .contact-details { padding: 28px 23px; }
+      th, td { min-width: 150px; padding: 13px 14px; }
+      td:first-child { min-width: 130px; }
+      .contact-main, .contact-details { padding: 27px 22px; }
       .contact-main { border-right: 0; border-bottom: 1px solid var(--line); }
       .people { grid-template-columns: 1fr; }
-      .footer { margin-top: 65px; }
+      .footer { margin-top: 52px; }
       .footer-inner { flex-direction: column; }
     }
     @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; } }
@@ -158,93 +157,125 @@
   <header class="site-header">
     <div class="wrap nav">
       <a class="brand" href="#home" aria-label="Muralidhar Industries home">
-        <svg class="brand-mark" viewBox="0 0 120 120" role="img" aria-label="MI">
-          <path d="M35 14A52 52 0 0 1 105 68 46 46 0 0 0 35 20Z" fill="#b9bcc1"/>
-          <path d="M15 52a52 52 0 0 0 57 54 46 46 0 0 1-51-54Z" fill="#efbd42"/>
-          <path d="m22 86 8-50h11l10 24 13-24h11l-5 50H60l3-36-12 22-12-22-7 36Zm61-50h11l-7 50H76Z" fill="#f7f6f2"/>
-          <path d="M22 84q32-30 70-18-38-20-70-6Z" fill="#efbd42"/>
-        </svg>
-        <span class="brand-name">Muralidhar<span>Industries</span></span>
+        <span class="brand-mark" aria-hidden="true">MI</span>
+        <span class="brand-name">Muralidhar Industries<small>Forging · Casting · Machining</small></span>
       </a>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation">Menu</button>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation" aria-label="Open navigation">Menu</button>
       <nav class="nav-links" id="navigation" aria-label="Main navigation">
-        <a href="#about">About</a><a href="#capabilities">Capabilities</a><a href="#industries">Industries</a><a href="#contact" class="nav-cta">Contact us</a>
+        <a href="#about">About Us</a>
+        <a href="#capabilities">Capabilities</a>
+        <a href="#specifications">Specifications</a>
+        <a href="#contact" class="nav-cta">Contact Us</a>
       </nav>
     </div>
   </header>
 
   <main id="home">
-    <section class="hero">
-      <div class="wrap">
-        <div class="hero-content">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div>
           <div class="eyebrow">Rajkot, Gujarat · Industrial manufacturing</div>
-          <h1>Built for industry.<br><span>Made to perform.</span></h1>
-          <p class="hero-copy">Forging, casting and precision machining for components that work hard. Muralidhar Industries brings metal-forming and machining expertise together to support your next project—from drawing and material selection to finished parts.</p>
-          <div class="actions"><a class="button" href="#capabilities">Explore our capabilities <span aria-hidden="true">→</span></a><a class="button button-outline" href="#contact">Discuss a requirement</a></div>
-          <div class="hero-note">Custom components manufactured to your drawings and specifications</div>
+          <h1 id="hero-title">Mfg. of All Types of <span>Forging, Casting &amp; Precision Machining</span></h1>
+          <p class="hero-copy">Muralidhar Industries manufactures custom and production components for industrial applications—from formed and cast metal to precision-machined parts.</p>
+          <p class="hero-location"><span>Based in</span> Somnath Industrial 4, Kothariya, Rajkot, Gujarat, India</p>
+          <div class="actions">
+            <a class="button" href="#capabilities">Explore capabilities <span aria-hidden="true">→</span></a>
+            <a class="button button-outline" href="#contact">Get in touch</a>
+          </div>
         </div>
+        <aside class="scope-card" aria-label="Core manufacturing scope">
+          <div class="eyebrow">Core manufacturing scope</div>
+          <h2>From metalworking to finished components</h2>
+          <ul class="scope-list">
+            <li>Closed-die, open-die &amp; custom forging</li>
+            <li>Ferrous and non-ferrous casting</li>
+            <li>CNC turning, VMC milling &amp; boring</li>
+            <li>Threading, drilling &amp; grinding</li>
+            <li>Heat treatment &amp; surface finishing</li>
+          </ul>
+        </aside>
       </div>
     </section>
 
     <div class="intro-strip" aria-label="Manufacturing services">
       <div class="wrap intro-grid">
-        <div class="intro-item"><strong>Forging</strong><span>Closed-die, open-die and custom forged parts</span></div>
-        <div class="intro-item"><strong>Casting</strong><span>Ferrous and non-ferrous components</span></div>
-        <div class="intro-item"><strong>Precision machining</strong><span>Finished parts to drawing and specification</span></div>
+        <div class="intro-item"><strong>Forging Components</strong><span>Closed-die, open-die and custom forged parts</span></div>
+        <div class="intro-item"><strong>Casting Components</strong><span>Ferrous and non-ferrous material options</span></div>
+        <div class="intro-item"><strong>Precision Machining</strong><span>Machined and finished to your requirements</span></div>
       </div>
     </div>
 
     <section class="section" id="about">
       <div class="wrap about-grid">
-        <div class="about-photo" role="img" aria-label="Industrial metalworking equipment"></div>
+        <div class="about-visual" role="img" aria-label="Abstract industrial metal component illustration"><div class="gear" aria-hidden="true">MI</div></div>
         <div class="about-copy">
-          <div class="eyebrow">Your manufacturing partner</div>
-          <h2>From raw metal to ready-to-fit components.</h2>
+          <div class="eyebrow">About Us</div>
+          <h2>Manufacturing strength, built around your requirements.</h2>
           <div class="gold-rule"></div>
-          <p>Based in Rajkot, Gujarat, Muralidhar Industries serves industrial customers with forged components, ferrous and non-ferrous castings, and precision-machined parts. We work to customer drawings, material grades, hardness targets and tolerance requirements.</p>
-          <p>Bring us a component drawing, sample or project brief. We can help coordinate the right combination of manufacturing processes and finishing requirements for your application.</p>
-          <div class="about-points"><span>Custom and repeat production</span><span>Multiple processes, one source</span><span>Material and finish options</span><span>Industrial applications</span></div>
+          <p>Muralidhar Industries is a Rajkot-based manufacturer of forging, casting and precision-machined components. We bring multiple metalworking processes together to help customers source parts for their applications.</p>
+          <p>From a custom component to repeat production, we work from your drawing, sample or project brief to understand material, process and finishing needs.</p>
+          <div class="about-points"><span>Custom and production work</span><span>Multiple processes, one source</span><span>Ferrous and non-ferrous materials</span><span>Made to drawing and specification</span></div>
         </div>
       </div>
     </section>
 
     <section class="section capabilities" id="capabilities">
       <div class="wrap">
-        <div class="section-heading"><div class="eyebrow">What we do</div><h2>Core manufacturing capabilities</h2><p>Metalworking services for custom components and production requirements. Share your specifications and we can discuss the right process for the part.</p></div>
+        <div class="section-heading"><div class="eyebrow">What we do</div><h2>Core Capabilities</h2><p>Integrated manufacturing processes for custom components and production requirements.</p></div>
         <div class="cap-grid">
-          <article class="cap-card"><div class="cap-number">01 / FORGING</div><h3>Forged components</h3><p>Forged parts designed for demanding industrial applications and manufactured to your requirements.</p><ul><li>Closed-die and open-die forging</li><li>Upset and custom-profile forging</li><li>Flanges, shafts, rings and gear blanks</li><li>Carbon, alloy and stainless steel</li><li>As-forged, heat-treated or machined</li></ul></article>
-          <article class="cap-card"><div class="cap-number">02 / CASTING</div><h3>Ferrous &amp; non-ferrous castings</h3><p>Cast components for complex forms, housings and other custom industrial applications.</p><ul><li>Sand, shell, investment and die casting</li><li>Grey iron, SG iron and cast steel</li><li>Aluminium, brass and bronze / gunmetal</li><li>Pump casings, housings and valve bodies</li><li>Rough-cast, fettled or machined</li></ul></article>
-          <article class="cap-card"><div class="cap-number">03 / MACHINING &amp; FINISH</div><h3>Precision machining</h3><p>Secondary and finish operations to bring forged, cast and stock material to final specification.</p><ul><li>CNC turning and VMC milling</li><li>Boring, drilling, tapping and threading</li><li>Facing, slotting and keyways</li><li>Cylindrical and surface grinding</li><li>Heat treatment and protective coatings</li></ul></article>
+          <article class="cap-card">
+            <div class="cap-number">01 / FORGING</div>
+            <h3>Forging Components</h3>
+            <p>Forged parts for demanding industrial applications, produced to your component requirements.</p>
+            <ul><li>Closed-die forging</li><li>Open-die forging</li><li>Custom forging</li></ul>
+          </article>
+          <article class="cap-card">
+            <div class="cap-number">02 / CASTING</div>
+            <h3>Casting Components</h3>
+            <p>Ferrous and non-ferrous cast components for custom industrial shapes and applications.</p>
+            <ul><li>CI and SG iron</li><li>Steel and aluminium</li><li>Brass and gunmetal</li></ul>
+          </article>
+          <article class="cap-card">
+            <div class="cap-number">03 / MACHINING</div>
+            <h3>Precision Machining</h3>
+            <p>Machining and finishing operations for forged, cast and other component requirements.</p>
+            <ul><li>CNC turning &amp; VMC milling</li><li>Boring, threading &amp; drilling</li><li>Grinding, heat treatment &amp; finishing</li></ul>
+          </article>
         </div>
       </div>
     </section>
 
     <section class="section" id="specifications">
       <div class="wrap">
-        <div class="section-heading"><div class="eyebrow">Material &amp; delivery options</div><h2>Specifications shaped around your part</h2><p>Share your drawing and operating requirements to discuss suitable materials, process options and deliverable condition.</p></div>
-        <div class="range-grid">
-          <div class="range-card"><h3>Materials</h3><div class="tag-list"><span class="tag">Carbon steel</span><span class="tag">Alloy steel</span><span class="tag">Stainless steel</span><span class="tag">Grey iron</span><span class="tag">SG / ductile iron</span><span class="tag">Cast steel</span><span class="tag">Aluminium</span><span class="tag">Brass &amp; bronze</span></div></div>
-          <div class="range-card"><h3>Process &amp; finish options</h3><div class="tag-list"><span class="tag">Forging</span><span class="tag">Sand / shell casting</span><span class="tag">Investment / die casting</span><span class="tag">CNC / VMC machining</span><span class="tag">Annealing / normalizing</span><span class="tag">Hardening &amp; tempering</span><span class="tag">Protective coatings</span><span class="tag">Inspection &amp; packing</span></div></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section industries" id="industries">
-      <div class="wrap">
-        <div class="section-heading"><div class="eyebrow">Applications</div><h2>Supporting industrial work</h2><p>We welcome component inquiries for a broad range of equipment and sectors.</p></div>
-        <div class="industry-row">
-          <div class="industry"><strong>Automotive</strong><span>Components &amp; assemblies</span></div>
-          <div class="industry"><strong>Agriculture</strong><span>Machinery &amp; equipment</span></div>
-          <div class="industry"><strong>Hydraulics &amp; pumps</strong><span>Housings, bodies &amp; parts</span></div>
-          <div class="industry"><strong>Heavy industry</strong><span>Industrial &amp; energy equipment</span></div>
+        <div class="section-heading"><div class="eyebrow">Technical details</div><h2>Technical Capability Overview</h2><p>Discuss your part drawing, material and finish requirements with our team.</p></div>
+        <div class="table-wrap" role="region" aria-label="Technical capability overview" tabindex="0">
+          <table>
+            <thead><tr><th scope="col">Category</th><th scope="col">Capabilities</th></tr></thead>
+            <tbody>
+              <tr><td>Forging</td><td>Closed-die, open-die and custom forging</td></tr>
+              <tr><td>Casting</td><td>Ferrous and non-ferrous casting: CI, SG iron, steel, aluminium, brass and gunmetal</td></tr>
+              <tr><td>Machining</td><td>CNC turning, VMC milling, boring, threading and drilling</td></tr>
+              <tr><td>Finishing</td><td>Grinding, heat treatment and surface finishing</td></tr>
+              <tr><td>Requirements</td><td>Custom and production components manufactured to drawing or sample</td></tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </section>
 
     <section class="section contact-section" id="contact">
       <div class="wrap contact-panel">
-        <div class="contact-main"><div class="eyebrow">Start a conversation</div><h2>Have a part in mind?</h2><div class="gold-rule"></div><p>Send your drawing, sample details or inquiry. Talk with our team about forging, casting and machining for your next requirement.</p><a class="button" href="mailto:muralidharindustries@yahoo.com?subject=Manufacturing%20inquiry">Email your inquiry <span aria-hidden="true">→</span></a></div>
-        <div class="contact-details"><h3>Muralidhar Industries</h3><p class="contact-line"><strong>Visit us</strong>Gondal Road, Opp. Parin Furniture,<br>Nr. Narayan Way Bridge, Kothariya,<br>Rajkot, Gujarat, India</p><p class="contact-line"><strong>Email</strong><a href="mailto:muralidharindustries@yahoo.com">muralidharindustries@yahoo.com</a></p><div class="people"><div class="person"><strong>Akshay Patel</strong><a href="tel:+918140072069">+91 81400 72069</a></div><div class="person"><strong>Ashish Patel</strong><a href="tel:+918511111648">+91 85111 11648</a></div></div></div>
+        <div class="contact-main"><div class="eyebrow">Contact Us</div><h2>Let’s discuss your component.</h2><div class="gold-rule"></div><p>Get in touch with Muralidhar Industries to discuss your forging, casting or precision machining requirements.</p><a class="button" href="mailto:muralidharindustries@yahoo.com">Email us <span aria-hidden="true">→</span></a></div>
+        <div class="contact-details">
+          <h3>Muralidhar Industries</h3>
+          <p class="contact-line"><strong>Address</strong>Somnath Industrial 4. Nr. Somnath Way Bridge, Kothariya, Rajkot - 360022, Gujarat, (INDIA)</p>
+          <p class="contact-line"><strong>Email</strong><a href="mailto:muralidharindustries@yahoo.com">muralidharindustries@yahoo.com</a></p>
+          <strong>Contacts</strong>
+          <div class="people">
+            <div class="person"><strong>Akshay Patel</strong><a href="tel:+918140072069">+91 81400 72069</a></div>
+            <div class="person"><strong>Ashish Patel</strong><a href="tel:+918511111648">+91 85111 11648</a></div>
+          </div>
+        </div>
       </div>
     </section>
   </main>
@@ -256,11 +287,13 @@
     menuButton.addEventListener('click', () => {
       const expanded = menuButton.getAttribute('aria-expanded') === 'true';
       menuButton.setAttribute('aria-expanded', String(!expanded));
+      menuButton.setAttribute('aria-label', expanded ? 'Open navigation' : 'Close navigation');
       navigation.classList.toggle('open', !expanded);
     });
     navigation.addEventListener('click', (event) => {
       if (event.target.closest('a')) {
         menuButton.setAttribute('aria-expanded', 'false');
+        menuButton.setAttribute('aria-label', 'Open navigation');
         navigation.classList.remove('open');
       }
     });
